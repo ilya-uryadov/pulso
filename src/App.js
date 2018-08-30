@@ -1,21 +1,49 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header';
+import Form from './Components/Form';
+import Pulse from './Components/Pulse';
+
+
 
 class App extends Component {
+
+  constructor (props){
+    super(props);
+
+    this.state = {
+      pulses: this.props.initialData
+    }
+  }
+
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <main>
+            <Header title={this.props.title} subtitle ={this.props.subtitle}  />
+      
+            <Form onAdd={this.handleAdd}/>
+
+            <section className="pulses-list">
+                    {this.state.pulses.map(pulses =>
+                        <Pulse 
+                            key={pulses.id} 
+                            id={pulses.id}
+                            date={pulses.date} 
+                            upperPressure={pulses.upperPressure} 
+                            lowerPressure={pulses.lowerPressure} 
+                            pulse={pulses.pulse} 
+                            health={pulses.health} 
+                            onStatusChange={this.handleStatusChange} 
+                            onDelete={this.handleDelete}
+                            onEdit={this.handleEdit}
+                        />)}
+                </section>
+
+        </main>
     );
   }
 }
+
 
 export default App;
