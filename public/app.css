@@ -185,10 +185,37 @@ header h1 {
     flex: 1;
 }
 
+.pulse-edit-form input:focus {
+    border: 2px solid #00d8ff;
+}
+
 .pulse-edit-form .save {
     margin-left: .5em;
 }
 
+/* Pulse form */
+
+.pulse-form {
+    display: flex;
+    background-color: #FAFAFA;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+.pulse-form input {
+    flex: 1;
+    outline: none;
+    transition: all .2s;
+    size: 10;
+}
+
+.pulse-form input:focus {
+    border: 2px solid #00d8ff;
+}
+
+.pulse-form button {
+    margin-left: 10px;
+}
 
 /* Todo */
 .todo {

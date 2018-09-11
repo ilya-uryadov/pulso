@@ -12,12 +12,12 @@ class Form extends React.Component {
 
     render() {
         return (
-            <form className="todo-form" onSubmit={this.hendleSubmit} > 
-                <input type="date" ref="date" placeholder="Дата" />
-                <input type="number" ref="upperPressure" placeholder="Верхнее давление" />
-                <input type="number" ref="lowerPressure" placeholder="Нижнее давление" />
-                <input type="number" ref="pulse" placeholder="Пульс" />
-                <input type="number" ref="health" placeholder="Оценка состояния" />
+            <form className="pulse-form" onSubmit={this.hendleSubmit} > 
+                <input type="date" min={'2018-01-01'} max={'2035-12-31'} ref="date" placeholder="Дата" />
+                <input type="number" size={10} max={300} ref="upperPressure" placeholder="Верхнее давление"/>
+                <input type="number" max={200} ref="lowerPressure" placeholder="Нижнее давление" />
+                <input type="number" max={200} ref="pulse" placeholder="Пульс" />
+                <input type="number" max={3} min={1} ref="health" placeholder="Оценка состояния" />
                 <Button type="submit"> Add values </Button>
             </form>
          )
