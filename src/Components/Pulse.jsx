@@ -34,9 +34,9 @@ class Pulse extends React.Component{
         return(
             <div className={'pulse'}>
                 <span className="pulse-date">{this.props.date}</span>
-                <span className="pulse-upperPressure">{this.props.upperPressure}</span>
-                <span className="pulse-lowerPressure">{this.props.lowerPressure}</span>
-                <span className="pulse-pulse">{this.props.pulse}</span>
+                <span className="pulse-upperPressure">upper: {this.props.upperPressure}</span>
+                <span className="pulse-lowerPressure">lower: {this.props.lowerPressure}</span>
+                <span className="pulse-pulse">pulse: {this.props.pulse}</span>
                 <span className="pulse-health">{this.props.health}</span>
                 <Button className="edit icon" icon="edit" onClick={() => this.setState({ editing:true})}/>
                 <Button className={"delete icon"} icon={'delete'} onClick={() => this.props.onDelete(this.props.id)} />

@@ -75,7 +75,7 @@ input {
 
 main {
     background: #fff;
-    width: 700px;
+    //width: 1024px;
     margin: 70px auto;
     border-radius: 2px;
     overflow: hidden;
@@ -135,6 +135,58 @@ header h1 {
 .stopwatch-controls button {
     margin: 5px;
     color: white;
+}
+
+/* Pulse */
+.pulse {
+    display: flex;
+    font-size: 1rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+    background-color: #fff;
+    transition: all .2s;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 1em;
+    align-items: center;
+}
+
+.pulse .pulse-date {
+    margin-right: auto;
+}
+
+.pulse .pulse-upperPressure {
+    margin-right: auto;
+    color: #003cff;
+    font-weight: bold;
+}
+
+.pulse .pulse-lowerPressure {
+    margin-right: auto;
+    //color: #00d8ff;
+    color: #003cff;
+    font-weight: lighter;
+}
+
+.pulse .pulse-pulse {
+    margin-right: auto;
+}
+.pulse .pulse-health {
+    margin-right: auto;
+}
+
+.pulse-edit-form {
+    display: flex;
+    font-size: 1rem;
+    padding: .85em;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.pulse-edit-form input {
+    flex: 1;
+}
+
+.pulse-edit-form .save {
+    margin-left: .5em;
 }
 
 

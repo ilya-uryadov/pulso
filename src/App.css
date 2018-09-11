@@ -1,3 +1,20 @@
+body {
+  background-color: #fafafa;
+  color: #757575;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+  background-color: #222;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .App {
   text-align: center;
 }
@@ -26,3 +43,4 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
