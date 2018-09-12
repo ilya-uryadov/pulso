@@ -56,7 +56,7 @@ class Pulse extends React.Component{
                 <input type="date" min={'2018-01-01'} max={'2025-12-31'} ref="date" defaultValue={this.props.date} />
                 <input type="number" max={300} ref="upperPressure" defaultValue={this.props.upperPressure} />
                 <input type="number" max={200} ref="lowerPressure" defaultValue={this.props.lowerPressure} />
-                <input type="number" max={200} ref="pulse" defaultValue={this.props.pulso} />
+                <input type="number" max={200} ref="pulso" defaultValue={this.props.pulso} />
                 <input type="number" max={3} min={1} ref="health" defaultValue={this.props.health} />
                 
                 <Button className="save icon" icon="save" type="submit" onClick={this.handleSubmit}/>
