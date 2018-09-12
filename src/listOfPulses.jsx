@@ -4,7 +4,7 @@ const pulses = [
         date: '2018-12-12',
         upperPressure: 120,
         lowerPressure: 80,
-        pulse: 72,
+        pulso: 72,
         health: 3
     },
     {
@@ -12,7 +12,7 @@ const pulses = [
         date: '2018-12-13',
         upperPressure: 150,
         lowerPressure: 90,
-        pulse: 92,
+        pulso: 92,
         health: 1
     },
     {
@@ -20,7 +20,7 @@ const pulses = [
         date: '2018-12-11',
         upperPressure: 130,
         lowerPressure: 85,
-        pulse: 80,
+        pulso: 80,
         health: 2
     }
 

@@ -13,7 +13,7 @@ App.propTypes = {
         date:PropTypes.date,
         upperPressure:PropTypes.number.isRequired,
         lowerPressure:PropTypes.number.isRequired,
-        pulse:PropTypes.number.isRequired,
+        pulso:PropTypes.number.isRequired,
         health:PropTypes.number.isRequired
     })
     ).isRequired  
