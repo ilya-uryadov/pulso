@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header';
 import Form from './Components/Form';
 import Pulse from './Components/Pulse';
-
+import GoogleComponent from './Components/google-oauth';
 
 
 class App extends Component {
@@ -64,6 +64,8 @@ class App extends Component {
   render() {
     return (
         <main>
+            <GoogleComponent />
+
             <Header title={this.props.title} subtitle ={this.props.subtitle}  />
       
             <Form onAdd={this.handleAdd}/>
